@@ -9,12 +9,25 @@ module z1top (
     input CLK_125MHZ_FPGA,
     input [3:0] BUTTONS,
     input [1:0] SWITCHES,
-    output [5:0] LEDS
+    output [5:0] LEDS,
+    output aud_pwm,
+    output aud_sd
 );
+
+    assign aud_sd = 1'b1;
+    
+    tone_generator tone_test_generator ( 
+        .output_enable(SWITCHES[0]),
+        .clk(CLK_125MHZ_FPGA),
+        .square_wave_out(aud_pwm)
+    );
+
+    
+    
     structural_adder user_adder (
-        .a({11'b0,SWITCHES[0],BUTTONS[1:0]}),
-        .b({11'b0,SWITCHES[1],BUTTONS[3:2]}),
-        .sum(LEDS[3:0])       // Upper bits will be truncated
+        .A({11'b0,SWITCHES[0],BUTTONS[1:0]}),
+        .B({11'b0,SWITCHES[1],BUTTONS[3:2]}),
+        .SUM(LEDS[3:0])       // Upper bits will be truncated
     );
 
     // Self test of the structural adder
@@ -25,9 +38,9 @@ module z1top (
     assign LEDS[5] = ~test_fail;
 
     structural_adder structural_test_adder (
-        .a(adder_operand1),
-        .b(adder_operand2),
-        .sum(structural_out)
+        .A(adder_operand1),
+        .B(adder_operand2),
+        .SUM(structural_out)
     );
 
     behavioral_adder behavioral_test_adder (

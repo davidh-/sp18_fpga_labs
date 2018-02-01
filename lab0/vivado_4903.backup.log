@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jan 31 14:15:32 2018
+# Process ID: 4903
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0/lab0.xpr
+INFO: [Project 1-313] Project file moved from '/home/cc/eecs151/sp18/class/eecs151-aap/.Xil/Vivado-3297-c125m-21.EECS.Berkeley.EDU/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0/lab0.ip_user_files', nor could it be found using path '/home/cc/eecs151/sp18/class/eecs151-aap/.Xil/Vivado-3297-c125m-21.EECS.Berkeley.EDU/PrjAr/_X_/lab0.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/current/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 5977.273 ; gain = 86.766 ; free physical = 13468 ; free virtual = 22932
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jan 31 14:22:10 2018] Launched synth_1...
+Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0/lab0.runs/synth_1/runme.log
+[Wed Jan 31 14:22:10 2018] Launched impl_1...
+Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab0/lab0.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:55:00
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+

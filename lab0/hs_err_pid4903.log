@@ -1,0 +1,23 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/Xilinx/Vivado/current/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x91ab39) [0x7efcb2e20b39]
+/opt/Xilinx/Vivado/current/tps/lnx64/jre/lib/amd64/server/libjvm.so(JVM_handle_linux_signal+0xb6) [0x7efcb2e26f26]
+/opt/Xilinx/Vivado/current/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x917753) [0x7efcb2e1d753]
+/lib64/libc.so.6() [0x33e5c32510]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/libstdc++.so.6(_ZNSsC1ERKSs+0xb) [0x7efcec53aa1b]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(XHWName::toString() const+0x19) [0x7efcb5d4dd49]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(XHWProperty::getId()+0x9) [0x7efcb5d4f349]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(XHWPropertyList::set(XHWProperty&)+0x26) [0x7efcb5d52a76]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(+0x17c851) [0x7efcb5e02851]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(json_read_array(InputStream*, void (*)(InputStream*, void*), void*)+0x89) [0x7efcb5f27479]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(XicomHWArguments_v1::readArguments(InputStream*, XHWPropertyList*)+0x36) [0x7efcb5e03036]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(xicom_read_arguments(InputStream*, XHWPropertyList*)+0x77) [0x7efcb5e01d67]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(XicomHWReq::receiveHandler(Channel*, void*, int)+0x21f) [0x7efcb5e0340f]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(handle_protocol_message(Channel*)+0x817) [0x7efcb5f2b9e7]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(+0x29a105) [0x7efcb5f20105]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(run_event_loop()+0x27e) [0x7efcb5f2333e]
+/opt/Xilinx/Vivado/current/lib/lnx64.o/librdi_xicom_hw.so(+0x2a844a) [0x7efcb5f2e44a]
+/lib64/libpthread.so.0() [0x33e6807aa1]
+/lib64/libc.so.6(clone+0x6d) [0x33e5ce8bcd]

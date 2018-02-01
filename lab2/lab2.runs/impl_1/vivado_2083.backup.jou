@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jan 31 19:06:09 2018
+# Process ID: 2083
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab2/lab2.runs/impl_1
+# Command line: vivado -log z1top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source z1top.tcl -notrace
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab2/lab2.runs/impl_1/z1top.vdi
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab2/lab2.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source z1top.tcl -notrace
