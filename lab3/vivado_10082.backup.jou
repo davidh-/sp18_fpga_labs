@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Feb  7 16:27:41 2018
+# Process ID: 10082
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr
+launch_simulation
+source tone_generator_testbench.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top music_streamer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top z1top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top music_streamer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top music_streamer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source music_streamer_testbench.tcl
+add_wave {{/music_streamer_testbench/top/audio_controller}} 
+close_sim

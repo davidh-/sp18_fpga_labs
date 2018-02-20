@@ -1,0 +1,114 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+Process ID: 21639
+
+Current time: 	2/7/18 6:49:20 PM PST
+Time zone: 	Pacific Standard Time (US/Pacific)
+
+OS: CentOS release 6.9 (Final)
+Version: 2.6.32-696.16.1.el6.centos.plus.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0.0
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/share/instsww/xilinx/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	eecs151-aaq
+User home directory: /home/cc/eecs151/sp18/class/eecs151-aaq
+User working directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/sim
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /share/instsww/xilinx/Vivado
+RDI data directory: /share/instsww/xilinx/Vivado/2016.4/data
+RDI bin directory: /share/instsww/xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: /home/cc/eecs151/sp18/class/eecs151-aaq/.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /home/cc/eecs151/sp18/class/eecs151-aaq/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	163 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,860 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 33 MB (+32290kb) [00:00:08]
+// [Engine Memory]: 4,860 MB (+4944374kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,870 MB. GUI used memory: 28 MB. Current time: 2/7/18 6:49:22 PM PST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// [GUI Memory]: 42 MB (+8023kb) [00:00:28]
+setFileChooser("/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr");
+// Opening Vivado Project: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,894 MB. GUI used memory: 31 MB. Current time: 2/7/18 6:49:42 PM PST
+// Tcl Message: open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/current/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 5946.723 ; gain = 56.137 ; free physical = 7761 ; free virtual = 22247 
+// [GUI Memory]: 59 MB (+15225kb) [00:00:38]
+// Project name: lab3; location: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3; part: xc7z020clg400-1
+// 'i' command handler elapsed time: 13 seconds
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 63 MB (+833kb) [00:01:09]
+// Elapsed time: 91 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,980 MB. GUI used memory: 36 MB. Current time: 2/7/18 6:51:22 PM PST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Dec 14 2016-22:55:00     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6DEA7A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)

@@ -2,6 +2,7 @@
 
 `define SECOND 1000000000
 `define MS 1000000
+// The SAMPLE_PERIOD corresponds to a 44.1 kHz sampling rate
 `define SAMPLE_PERIOD 22675.7
 
 module tone_generator_testbench();
@@ -27,21 +28,50 @@ module tone_generator_testbench();
         #(10 * `MS);
         output_enable = 1'b1;
 
-        tone_to_play = 24'd37500;
+        tone_to_play = 24'd1000;
         #(200 * `MS);
 
-        tone_to_play = 24'd42000;
+        tone_to_play = 24'd5000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd10000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd15000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd20000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd30000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd35000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd40000;
         #(200 * `MS);
 
         tone_to_play = 24'd45000;
         #(200 * `MS);
 
-        tone_to_play = 24'd47000;
-        #(200 * `MS);
-
         tone_to_play = 24'd50000;
         #(200 * `MS);
+        
+        tone_to_play = 24'd55000;
+        #(200 * `MS);
 
+        tone_to_play = 24'd60000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd65000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd70000;
+        #(200 * `MS);
+
+        tone_to_play = 24'd75000;
+        #(200 * `MS);
         output_enable = 1'b0;
         #(100 * `MS);
         

@@ -1,16 +1,71 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Feb  6 23:35:36 2018
-# Process ID: 29744
-# Current directory: /home/arya
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Feb  7 19:05:50 2018
+# Process ID: 27078
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3
 # Command line: vivado
-# Log file: /home/arya/vivado.log
-# Journal file: /home/arya/vivado.jou
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/arya/src/eecs151-sp18/fpga_labs/staging/lab3/lab3/lab3.xpr
-update_compile_order -fileset sources_1
-reset_simulation
-archive_project /home/arya/src/eecs151-sp18/fpga_labs/staging/lab3/lab3.xpr.zip -force -exclude_run_results -include_config_settings
+open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top z1top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Feb  7 15:40:17 2018
+# Process ID: 27155
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr
+save_project_as lab3 /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/testt/lab3 -force
+close_project
+open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tone_generator_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source tone_generator_testbench.tcl

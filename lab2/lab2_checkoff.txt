@@ -1,0 +1,12 @@
+3.1 Checkoff Questions
+
+1. How many SLICEs are in a single CLB?
+
+2. How many inputs do each of the LUTs on a Zynq-7000 FPGA have?
+
+3. How many LUTs does the 7z020 have?
+
+4. How do you implement logic functions of 7 inputs in a single SLICEL? How about 8? Draw a high-level circuit diagram to show how the implementation would look. Be specifc about the elements (LUTs, muxes) that are used.
+
+
+5. What is the difference between a SLICEL and a SLICEM?

@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Feb  7 16:27:41 2018
+# Process ID: 10082
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3
+# Command line: vivado
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.log
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/current/data/ip'.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav/.nfs0000000005d435c5000003ec
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tone_generator_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav'
+xvlog -m64 --relax -prj tone_generator_testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tone_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tone_generator_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/current/bin/unwrapped/lnx64.o/xelab -wto f06788b246114f0a96601ee64b1e32d9 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tone_generator_testbench_behav xil_defaultlib.tone_generator_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" Line 1. Module tone_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" Line 1. Module tone_generator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tone_generator
+Compiling module xil_defaultlib.tone_generator_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tone_generator_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tone_generator_testbench_behav -key {Behavioral:sim_1:Functional:tone_generator_testbench} -tclbatch {tone_generator_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tone_generator_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0.5s
+run: Time (s): cpu = 00:01:05 ; elapsed = 00:01:03 . Memory (MB): peak = 6035.891 ; gain = 12.066 ; free physical = 5941 ; free virtual = 22026
+xsim: Time (s): cpu = 00:01:11 ; elapsed = 00:01:05 . Memory (MB): peak = 6035.891 ; gain = 61.711 ; free physical = 5941 ; free virtual = 22026
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tone_generator_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0.5s
+launch_simulation: Time (s): cpu = 00:01:15 ; elapsed = 00:01:08 . Memory (MB): peak = 6035.891 ; gain = 71.141 ; free physical = 5941 ; free virtual = 22026
+set_property top music_streamer_testbench [current_fileset]
+set_property top z1top [current_fileset]
+set_property top music_streamer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Feb  7 16:35:31 2018] Launched synth_1...
+Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/synth_1/runme.log
+[Wed Feb  7 16:35:31 2018] Launched impl_1...
+Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:55:00
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6DEA7A
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_hw
+set_property top music_streamer_testbench [current_fileset]
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav/.nfs0000000005d435c5000003ec
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'music_streamer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav'
+xvlog -m64 --relax -prj music_streamer_testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/music_streamer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module music_streamer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tone_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/z1top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module z1top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/music_streamer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module music_streamer_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/current/bin/unwrapped/lnx64.o/xelab -wto f06788b246114f0a96601ee64b1e32d9 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot music_streamer_testbench_behav xil_defaultlib.music_streamer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 10 for port rom_address [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/z1top.v:23]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 24 for port data [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/music_streamer.v:24]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port last_address [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/music_streamer.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/music_streamer.v" Line 1. Module music_streamer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/rom.v" Line 1. Module rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" Line 1. Module tone_generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/music_streamer.v" Line 1. Module music_streamer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/rom.v" Line 1. Module rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" Line 1. Module tone_generator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.music_streamer
+Compiling module xil_defaultlib.tone_generator
+Compiling module xil_defaultlib.z1top
+Compiling module xil_defaultlib.music_streamer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot music_streamer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "music_streamer_testbench_behav -key {Behavioral:sim_1:Functional:music_streamer_testbench} -tclbatch {music_streamer_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source music_streamer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0.5s
+run: Time (s): cpu = 00:01:28 ; elapsed = 00:02:30 . Memory (MB): peak = 6241.523 ; gain = 0.000 ; free physical = 6222 ; free virtual = 21764
+xsim: Time (s): cpu = 00:01:29 ; elapsed = 00:02:31 . Memory (MB): peak = 6241.523 ; gain = 27.762 ; free physical = 6222 ; free virtual = 21764
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'music_streamer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0.5s
+launch_simulation: Time (s): cpu = 00:01:30 ; elapsed = 00:02:34 . Memory (MB): peak = 6241.523 ; gain = 27.762 ; free physical = 6222 ; free virtual = 21764
+add_wave {{/music_streamer_testbench/top/audio_controller}} 
+close_sim

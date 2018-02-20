@@ -1,0 +1,2445 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+Process ID: 10082
+
+Current time: 	2/7/18 4:27:58 PM PST
+Time zone: 	Pacific Standard Time (US/Pacific)
+
+OS: CentOS release 6.9 (Final)
+Version: 2.6.32-696.16.1.el6.centos.plus.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0.0
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/share/instsww/xilinx/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	eecs151-aaq
+User home directory: /home/cc/eecs151/sp18/class/eecs151-aaq
+User working directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /share/instsww/xilinx/Vivado
+RDI data directory: /share/instsww/xilinx/Vivado/2016.4/data
+RDI bin directory: /share/instsww/xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: /home/cc/eecs151/sp18/class/eecs151-aaq/.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /home/cc/eecs151/sp18/class/eecs151-aaq/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	176 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,849 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 34 MB (+32803kb) [00:00:06]
+// [Engine Memory]: 4,849 MB (+4932717kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,859 MB. GUI used memory: 28 MB. Current time: 2/7/18 4:28:00 PM PST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr");
+// Opening Vivado Project: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 53 MB (+18480kb) [00:00:14]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+8516kb) [00:00:15]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/current/data/ip'. 
+// Project name: lab3; location: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3; part: xc7z020clg400-1
+// 'i' command handler elapsed time: 5 seconds
+// [GUI Memory]: 88 MB (+22258kb) [00:00:16]
+// [GUI Memory]: 96 MB (+3485kb) [00:00:17]
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// [GUI Memory]: 104 MB (+3548kb) [00:00:17]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 116 MB (+6951kb) [00:00:18]
+// [GUI Memory]: 124 MB (+2156kb) [00:00:18]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tone_generator_testbench' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav' 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, e:bt)
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvlog -m64 --relax -prj tone_generator_testbench_vlog.prj INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module tone_generator INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.srcs/sources_1/new/tone_generator_testbench.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module tone_generator_testbench INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tone_generator_testbench_behav -key {Behavioral:sim_1:Functional:tone_generator_testbench} -tclbatch {tone_generator_testbench.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 132 MB (+1613kb) [00:00:28]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: source tone_generator_testbench.tcl 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: # run 0.5s 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,013 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:20 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,013 MB. GUI used memory: 56 MB. Current time: 2/7/18 4:28:21 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,013 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:25 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:29 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:32 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 47 MB. Current time: 2/7/18 4:28:35 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:39 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:42 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 48 MB. Current time: 2/7/18 4:28:46 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:28:49 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:01 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:05 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:09 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Elapsed time: 56 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 81, 369); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:12 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:29:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 48 MB. Current time: 2/7/18 4:29:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:15 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 48 MB. Current time: 2/7/18 4:29:16 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:29:17 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:29:18 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:01:05 ; elapsed = 00:01:03 . Memory (MB): peak = 6035.891 ; gain = 12.066 ; free physical = 5941 ; free virtual = 22026 xsim: Time (s): cpu = 00:01:11 ; elapsed = 00:01:05 . Memory (MB): peak = 6035.891 ; gain = 61.711 ; free physical = 5941 ; free virtual = 22026 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tone_generator_testbench_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 0.5s 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:01:15 ; elapsed = 00:01:08 . Memory (MB): peak = 6035.891 ; gain = 71.141 ; free physical = 5941 ; free virtual = 22026 
+// Elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// Elapsed time: 92 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 533, 409); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 94 MB. Current time: 2/7/18 4:30:54 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:30:56 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:30:59 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 50 MB. Current time: 2/7/18 4:31:00 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 55 MB. Current time: 2/7/18 4:31:00 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 51 MB. Current time: 2/7/18 4:31:04 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 50 MB. Current time: 2/7/18 4:31:05 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:06 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:07 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:07 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:08 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:09 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:10 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:10 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:10 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:11 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 44 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 47 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 47 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 47 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:12 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:13 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 46 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 48 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,015 MB. GUI used memory: 45 MB. Current time: 2/7/18 4:31:16 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 31 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+closeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer (music_streamer.v)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer (music_streamer.v)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tone_generator_testbench (tone_generator_testbench.v)]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 14, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v)]", 12, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 13, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 13, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,023 MB. GUI used memory: 49 MB. Current time: 2/7/18 4:31:50 PM PST
+// Elapsed time: 52 seconds
+selectCodeEditor("tone_generator_testbench.v", 265, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectButton(PAResourceCommand.PACommandNames_GENERAL_SETTINGS, "z1top"); // h:k (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GENERAL_SETTINGS
+// Project Settings: addNotify
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t:aE
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 14, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 2, true, false); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame) - Popup Trigger
+selectMenuItem((HResource) null, "Split Vertically"); // JMenuItem:AbstractButton (JidePopupMenu:JPopupMenu)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 24 seconds
+selectCodeEditor("z1top.v", 182, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 182, 279, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top music_streamer_testbench [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top z1top [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v)]", 13, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 16, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 15, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 15, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top music_streamer_testbench [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Bitstream Settings]", 24, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Project Settings: addNotify
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Feb  7 16:35:31 2018] Launched synth_1... Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/synth_1/runme.log [Wed Feb  7 16:35:31 2018] Launched impl_1... Run output will be captured here: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/runme.log 
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 15, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 15, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 16, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 16, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), audio_controller - tone_generator (tone_generator.v)]", 17, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), audio_controller - tone_generator (tone_generator.v)]", 17, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 213 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,056 MB. GUI used memory: 52 MB. Current time: 2/7/18 4:39:25 PM PST
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Dec 14 2016-22:55:00     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6DEA7A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 5,110 MB (+20007kb) [00:11:39]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.runs/impl_1/z1top.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 480 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+closeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+closeFrame(RDIResource.RDIViews_PROPERTIES, "Hardware Device Properties"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 406); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 406); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 132, 398); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,129 MB. GUI used memory: 52 MB. Current time: 2/7/18 4:48:41 PM PST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: close_hw 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+closeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // u:aE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 17, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 17, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 533 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer (music_streamer.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer (music_streamer.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), audio_controller - tone_generator (tone_generator.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), audio_controller - tone_generator (tone_generator.v)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("z1top.v", 122, 208); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, PYNQ-Z1_C.xdc]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, PYNQ-Z1_C.xdc]", 9, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 6, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 6, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer (music_streamer.v)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+// Elapsed time: 33 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+// Elapsed time: 15 seconds
+setFileChooser("/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/sim/tests/music_streamer_testbench.do");
+// 'e' command handler elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("z1top.v", 291, 239); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 292, 255); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 295, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer.v", 1, true, false); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 5,162 MB. GUI used memory: 50 MB. Current time: 2/7/18 5:01:00 PM PST
+selectMenuItem((HResource) null, "Split Vertically"); // JMenuItem:AbstractButton (JidePopupMenu:JPopupMenu)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("z1top.v", 159, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 159, 382, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 161, 386, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("z1top.v", 99, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 99, 277, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Elapsed time: 33 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("z1top.v", 132, 222); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tone_generator_testbench (tone_generator_testbench.v)]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tone_generator_testbench (tone_generator_testbench.v)]", 3, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer (music_streamer.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer (music_streamer.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rom (rom.v)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rom (rom.v)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectCodeEditor("tone_generator_testbench.v", 89, 191); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tone_generator_testbench.v", 88, 191, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("tone_generator_testbench.v", 153, 325); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tone_generator_testbench.v", 153, 325, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("tone_generator_testbench.v", 198, 325); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tone_generator_testbench.v", 198, 325, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator_testbench.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("z1top.v", 96, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("z1top.v", 171, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 171, 355, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 171, 355, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("z1top.v", 91, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 91, 262, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Elapsed time: 28 seconds
+selectCodeEditor("z1top.v", 150, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 115 seconds
+selectCodeEditor("z1top.v", 303, 366); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 231, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("z1top.v", 364, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 65 seconds
+selectCodeEditor("z1top.v", 229, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("z1top.v", 202, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("z1top.v", 127, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("z1top.v", 58, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 50, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("z1top.v", 231, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 140, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 140, 230, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 140, 230, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("z1top.v", 223, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor("z1top.v", 154, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 154, 125, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 154, 125, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // T:JideMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // T:JideMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // T:JideMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // T:JideMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // T:JideMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // T:JideMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+selectCodeEditor("z1top.v", 153, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 153, 264, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Elapsed time: 11 seconds
+selectCodeEditor("z1top.v", 153, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 153, 217, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 153, 217, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectCodeEditor("z1top.v", 91, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 148, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 148, 232, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 148, 232, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("z1top.v", 99, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 99, 275, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Elapsed time: 31 seconds
+selectCodeEditor("z1top.v", 196, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 137, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 137, 230, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 169, 364); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 169, 364, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 153, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 266, 369); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 246, 369); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 199, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 76, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 125, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 125, 174, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 120, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("z1top.v", 210, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 210, 222); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 57, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 157, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 157, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "z1top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 166, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 185, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 185, 234, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 184, 234, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("z1top.v", 242, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 143, 382, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("z1top.v", 184, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator_testbench.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("z1top.v", 133, 485); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 133, 485, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tone_generator.v", 151, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tone_generator.v", 151, 145, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("tone_generator.v", 295, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tone_generator_testbench.v", 100, 189); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tone_generator_testbench.v", 100, 189, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator_testbench.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("z1top.v", 227, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 150, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 150, 232, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 207, 364); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 207, 364, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("z1top.v", 188, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tone_generator.v", 177, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tone_generator.v", 177, 246, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("z1top.v", 83, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 145 seconds
+selectCodeEditor("z1top.v", 42, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 42, 232, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 142, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("z1top.v", 184, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 184, 337, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 135, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 135, 228, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 193, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 193, 338, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 48 seconds
+selectCodeEditor("z1top.v", 297, 331); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 181, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 181, 338, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 136, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 136, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 225, 255); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("z1top.v", 65, 267); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator_testbench.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("z1top.v", 137, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 137, 168, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 76, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "z1top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 307, 263); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("z1top.v", 228, 391); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 147, 324); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 147, 324, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("z1top.v", 254, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("z1top.v", 466, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("z1top.v", 191, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 191, 337, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("z1top.v", 217, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 237, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("music_streamer.v", 110, 55); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 267, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 103, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("z1top.v", 237, 335); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 216, 263); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("z1top.v", 256, 364); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("z1top.v", 104, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 103, 289, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 102, 107); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("music_streamer.v", 240, 142); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 248, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rom (rom.v)]", 19, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 137, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("music_streamer.v", 168, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 47, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "z1top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 37, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 252, 399); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 10, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 89, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 89, 125, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 72, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 72, 140, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 78, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 77, 157, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 85, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+setFileChooser("/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/sim/tests/music_streamer_testbench.do");
+// 'e' command handler elapsed time: 5 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_SOURCE_FILE, "Open Source File..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_SOURCE_FILE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+setFileChooser("/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/sim/tests/tone_generator_testbench.do");
+// 'e' command handler elapsed time: 3 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectCodeEditor("music_streamer.v", 91, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 91, 125, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("music_streamer.v", 77, 132); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 79, 131, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("music_streamer.v", 177, 141); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 177, 141, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 119, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 228, 101); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 249, 107); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 119, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,172 MB. GUI used memory: 52 MB. Current time: 2/7/18 5:31:00 PM PST
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 118, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 159, 115); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("music_streamer.v", 70, 115); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 116, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 116, 110, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 140, 159); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 140, 159, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 244, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 141, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 230, 97); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 135, 191); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 135, 191, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 121, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 172, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("music_streamer.v", 107, 153); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 107, 153, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 119, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 50, 156); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 50, 156, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 141, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 90, 156); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 172, 148); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 170, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 170, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 170, 234, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 207, 255); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 207, 255, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 209, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 208, 245, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 252, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("music_streamer.v", 91, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 91, 144, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 58, 141); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 58, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 154, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 168, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("music_streamer.v", 155, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 159, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 96 seconds
+selectCodeEditor("music_streamer.v", 127, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("music_streamer.v", 154, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("music_streamer.v", 163, 276); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("music_streamer.v", 164, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 17, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 333, 116); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 189, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 188, 81, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 138, 100); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 138, 100, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("music_streamer.v", 185, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 184, 81, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 88, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 88, 81, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 106, 101); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 106, 101, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("music_streamer.v", 149, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 149, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 130, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 130, 129, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 198, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 210, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("music_streamer.v", 153, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 122, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 230, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 187, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 153, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 148, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 153, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("music_streamer.v", 63, 193); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("music_streamer.v", 153, 304); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 124, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("music_streamer.v", 63, 175); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 175, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 175, 173, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 154, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 153, 318); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 180, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 180, 146, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 117, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 117, 127, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("music_streamer.v", 184, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("music_streamer.v", 261, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("music_streamer.v", 175, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("music_streamer.v", 112, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("music_streamer.v", 153, 189); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 162, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 185, 263); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 307, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("music_streamer.v", 132, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 115, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 115, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 115, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 296, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 239, 276); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 99, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 86, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 68 seconds
+selectCodeEditor("music_streamer.v", 172, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("music_streamer.v", 203, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("music_streamer.v", 218, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 111, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 282, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("music_streamer.v", 142, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("music_streamer.v", 147, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("music_streamer.v", 146, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 211, 286); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("rom.v", 190, 22); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("rom.v", 190, 21, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 55 seconds
+selectCodeEditor("music_streamer.v", 160, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("music_streamer.v", 129, 190); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 129, 190, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 69, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 69, 275, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 76, 283); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 56, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 79, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 79, 278, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 130, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 130, 192, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 202, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 202, 278, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 104, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 104, 277, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 246, 276); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("music_streamer.v", 139, 414); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 139, 414, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("music_streamer.v", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 214, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 25 seconds
+selectCodeEditor("z1top.v", 126, 323); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 126, 323, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("z1top.v", 210, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 210, 338, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("z1top.v", 186, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("z1top.v", 186, 338, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("music_streamer.v", 103, 400); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 72, 467); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 139, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 142, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 142, 409, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 159, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 159, 429, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 38 seconds
+selectCodeEditor("music_streamer.v", 139, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 138, 411, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 138, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 154, 410); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 410); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 410, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 154, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("music_streamer.v", 155, 188); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 188, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 174, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 208, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 205, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 152, 394); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 152, 394, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 131, 151); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 253, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 149, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 149, 354, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("music_streamer.v", 137, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("music_streamer.v", 127, 154); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 75, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 80, 87); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 111, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 29, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 226, 98); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 91, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 118, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 215, 92); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("music_streamer.v", 92, 149); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("music_streamer.v", 89, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 89, 144, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 167, 147); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 167, 147, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 163, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 143, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 282, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 128, 167); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 198, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 256, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 66, 204); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 205, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("music_streamer.v", 153, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 166, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 191, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 18, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 119, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 167, 258); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("music_streamer.v", 98, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 150, 223); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 133, 221); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 133, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 211, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 227, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tone_generator.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("music_streamer.v", 195, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 137, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 137, 218, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("music_streamer.v", 199, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 199, 340, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 262, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 255, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 283, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 266, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 291, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 245, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("music_streamer.v", 308, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 274, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("rom.v", 122, 24); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("rom.v", 122, 24, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("rom.v", 134, 27); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("rom.v", 134, 27, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 294, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,174 MB. GUI used memory: 50 MB. Current time: 2/7/18 6:01:00 PM PST
+// Elapsed time: 10 seconds
+selectCodeEditor("music_streamer.v", 199, 323); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 121, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("music_streamer.v", 170, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 148, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 148, 131, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 182, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("music_streamer.v", 287, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("music_streamer.v", 241, 341); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 126, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 280, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 286, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 420, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 450, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("music_streamer.v", 501, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 497, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 326, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 326, 234, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("music_streamer.v", 536, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 545, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("rom.v", 112, 20); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("rom.v", 112, 20, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("music_streamer.v", 176, 54); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 176, 54, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("music_streamer.v", 216, 159); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 180, 50); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 179, 50, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 131, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 135, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 134, 249, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "music_streamer.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 209, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "music_streamer.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("music_streamer.v", 75, 311); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// Elapsed time: 27 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+setFileChooser("/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/sim/tests/music_streamer_testbench.do");
+// 'e' command handler elapsed time: 7 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.do", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer_testbench.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z1top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 73 seconds
+selectCodeEditor("music_streamer.v", 112, 115); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 112, 115, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 14, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tone_generator_testbench (tone_generator_testbench.v), audio_controller - tone_generator (tone_generator.v)]", 17, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), streamer - music_streamer (music_streamer.v)]", 14, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), streamer - music_streamer (music_streamer.v)]", 14, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), streamer - music_streamer (music_streamer.v), music - rom (rom.v)]", 15, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v), streamer - music_streamer (music_streamer.v), music - rom (rom.v)]", 15, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("music_streamer.v", 155, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 155, 354, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 35 seconds
+selectCodeEditor("music_streamer.v", 138, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 148, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 222, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 147, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("music_streamer.v", 90, 138); // bF:I (JPanel:JComponent, cd:JFrame)
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// Elapsed time: 57 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// Elapsed time: 121 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v), top - z1top (z1top.v)]", 13, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, music_streamer_testbench (music_streamer_testbench.v)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top music_streamer_testbench [current_fileset] 
+// bt:g (cd:JFrame):  Set as Top : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Set as Top"); // bt:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, music_streamer_testbench (music_streamer_testbench.v)]", 12, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'music_streamer_testbench' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab3/lab3.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "music_streamer_testbench_behav -key {Behavioral:sim_1:Functional:music_streamer_testbench} -tclbatch {music_streamer_testbench.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source music_streamer_testbench.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 0.5s 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:13:20 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 56 MB. Current time: 2/7/18 6:13:21 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:24 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:28 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:31 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:35 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:38 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:42 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:45 PM PST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:13:49 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Elapsed time: 38 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, e:bt)
+// 'd' command handler elapsed time: 37 seconds
+selectTreeTableHeader(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "Design Unit", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTableHeader(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "Design Unit", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 159, 367); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:14:27 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Elapsed time: 101 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "music_streamer.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+selectCodeEditor("music_streamer.v", 393, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:01:28 ; elapsed = 00:02:30 . Memory (MB): peak = 6241.523 ; gain = 0.000 ; free physical = 6222 ; free virtual = 21764 xsim: Time (s): cpu = 00:01:29 ; elapsed = 00:02:31 . Memory (MB): peak = 6241.523 ; gain = 27.762 ; free physical = 6222 ; free virtual = 21764 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'music_streamer_testbench_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 0.5s 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:01:30 ; elapsed = 00:02:34 . Memory (MB): peak = 6241.523 ; gain = 27.762 ; free physical = 6222 ; free virtual = 21764 
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:15:55 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 30 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 269, 74); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 223, 200); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:28 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:30 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:31 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:31 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:16:31 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:32 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:32 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:33 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:33 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:33 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:34 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:16:34 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 53 MB. Current time: 2/7/18 6:16:35 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:35 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:36 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:16:36 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:16:37 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:37 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:38 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 56 MB. Current time: 2/7/18 6:16:38 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:39 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:39 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:42 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:42 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 56 MB. Current time: 2/7/18 6:16:42 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:42 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:42 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 56 MB. Current time: 2/7/18 6:16:42 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 56 MB. Current time: 2/7/18 6:16:43 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:43 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 53 MB. Current time: 2/7/18 6:16:43 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:43 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:43 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:43 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:44 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:44 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:16:44 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:44 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:16:44 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:45 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:45 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:45 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:45 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:45 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:46 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:46 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:16:46 PM PST
+// Elapsed time: 104 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 293, 352); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 56 MB. Current time: 2/7/18 6:18:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:18:14 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:18:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:18:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:18:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:18:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:18:15 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 54 MB. Current time: 2/7/18 6:18:16 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,194 MB. GUI used memory: 55 MB. Current time: 2/7/18 6:18:17 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
