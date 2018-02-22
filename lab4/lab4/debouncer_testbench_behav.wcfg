@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="debouncer_testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="debouncer_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2046738499fs"></ZoomStartTime>
+      <ZoomEndTime time="2177538500fs"></ZoomEndTime>
+      <Cursor1Time time="2145000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/debouncer_testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/glitchy_signal" type="array">
+      <obj_property name="ElementShortName">glitchy_signal[1:0]</obj_property>
+      <obj_property name="ObjectShortName">glitchy_signal[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/debounced_signal" type="array">
+      <obj_property name="ElementShortName">debounced_signal[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debounced_signal[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/test1_done" type="array">
+      <obj_property name="ElementShortName">test1_done[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test1_done[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/test2_output_should_rise" type="array">
+      <obj_property name="ElementShortName">test2_output_should_rise[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test2_output_should_rise[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/test2_output_should_fall" type="array">
+      <obj_property name="ElementShortName">test2_output_should_fall[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test2_output_should_fall[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/test2_done" type="array">
+      <obj_property name="ElementShortName">test2_done[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test2_done[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/glitchy_signal" type="array">
+      <obj_property name="ElementShortName">glitchy_signal[1:0]</obj_property>
+      <obj_property name="ObjectShortName">glitchy_signal[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/debounced_signal" type="array">
+      <obj_property name="ElementShortName">debounced_signal[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debounced_signal[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/saturating_counter" type="array">
+      <obj_property name="ElementShortName">saturating_counter[1:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">saturating_counter[1:0][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/wrapping_counter" type="array">
+      <obj_property name="ElementShortName">wrapping_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wrapping_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/sample_pulse_out" type="logic">
+      <obj_property name="ElementShortName">sample_pulse_out</obj_property>
+      <obj_property name="ObjectShortName">sample_pulse_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/sync_out" type="array">
+      <obj_property name="ElementShortName">sync_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sync_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/debounced_sig_reg" type="array">
+      <obj_property name="ElementShortName">debounced_sig_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debounced_sig_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/width" type="array">
+      <obj_property name="ElementShortName">width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/sample_count_max" type="array">
+      <obj_property name="ElementShortName">sample_count_max[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_count_max[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/pulse_count_max" type="array">
+      <obj_property name="ElementShortName">pulse_count_max[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pulse_count_max[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/wrapping_counter_width" type="array">
+      <obj_property name="ElementShortName">wrapping_counter_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wrapping_counter_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/saturating_counter_width" type="array">
+      <obj_property name="ElementShortName">saturating_counter_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">saturating_counter_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/synch/async_signal" type="array">
+      <obj_property name="ElementShortName">async_signal[1:0]</obj_property>
+      <obj_property name="ObjectShortName">async_signal[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/synch/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/synch/sync_signal" type="array">
+      <obj_property name="ElementShortName">sync_signal[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sync_signal[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/synch/s1" type="array">
+      <obj_property name="ElementShortName">s1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/synch/s2" type="array">
+      <obj_property name="ElementShortName">s2[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s2[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/debouncer_testbench/DUT/synch/width" type="array">
+      <obj_property name="ElementShortName">width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">width[31:0]</obj_property>
+   </wvobject>
+</wave_config>
