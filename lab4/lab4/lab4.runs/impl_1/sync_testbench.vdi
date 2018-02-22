@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Feb 21 16:10:09 2018
+# Process ID: 12138
+# Current directory: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1
+# Command line: vivado -log sync_testbench.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sync_testbench.tcl -notrace
+# Log file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1/sync_testbench.vdi
+# Journal file: /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source sync_testbench.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[0]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[1]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[0]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[1]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[2]'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_PWM'. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1347.109 ; gain = 251.375 ; free physical = 11015 ; free virtual = 21098
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1387.121 ; gain = 40.012 ; free physical = 11015 ; free virtual = 21098
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: e213a680
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e213a680
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: e213a680
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: e213a680
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: e213a680
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+Ending Logic Optimization Task | Checksum: e213a680
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: e213a680
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.617 ; gain = 0.000 ; free physical = 10644 ; free virtual = 20727
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 14 Warnings, 14 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1760.617 ; gain = 413.508 ; free physical = 10644 ; free virtual = 20727
+INFO: [Common 17-1381] The checkpoint '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1/sync_testbench_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1/sync_testbench_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.633 ; gain = 0.000 ; free physical = 10641 ; free virtual = 20724
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1800.633 ; gain = 0.000 ; free physical = 10641 ; free virtual = 20724
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1800.633 ; gain = 0.000 ; free physical = 10641 ; free virtual = 20724
+INFO: [Common 17-83] Releasing license: Implementation
+34 Infos, 14 Warnings, 14 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 21 16:10:33 2018...
