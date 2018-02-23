@@ -17,13 +17,8 @@ module debouncer #(
 
     // Remove this line once you create your synchronizer
     reg [saturating_counter_width-1:0] saturating_counter [width-1:0]; 
-    
     reg [wrapping_counter_width-1:0] wrapping_counter;
     reg sample_pulse_out;
-    
-    wire [width-1:0] sync_out;
-
-    synchronizer #(.width(width)) synch(.async_signal(glitchy_signal), .clk(clk), .sync_signal(sync_out));
 
     initial begin
         wrapping_counter = 0;
@@ -36,23 +31,19 @@ module debouncer #(
             initial begin
                 saturating_counter[i] = 0;
             end
-            assign debounced_signal[i] = (saturating_counter[i] == pulse_count_max) ? 1: 0;
-            always @ (*) begin
+            assign debounced_signal[i] = saturating_counter[i] == pulse_count_max;
+            always @ (posedge clk) begin
                 // Insert synchronous Verilog here
-                if (!sync_out[i]) begin
-                    saturating_counter[i] = 0;
+                if (!glitchy_signal[i]) begin
+                    saturating_counter[i] <= 0;
                 end
-                else if (sample_pulse_out && sync_out[i] && saturating_counter[i] < pulse_count_max) begin
-                    saturating_counter[i] = saturating_counter[i] + 1;
+                else if (sample_pulse_out && glitchy_signal[i] && saturating_counter[i] < pulse_count_max) begin
+                    saturating_counter[i] <= saturating_counter[i] + 1;
                 end
             end
         end
     endgenerate   
-    
 
-    
-    
-    
     always @(posedge clk) begin
         if (wrapping_counter < sample_count_max) begin
             wrapping_counter <= wrapping_counter + 1;
@@ -62,8 +53,5 @@ module debouncer #(
             wrapping_counter <= 0;
             sample_pulse_out <= 1;
         end
-    end
-
-    
-    
+    end  
 endmodule

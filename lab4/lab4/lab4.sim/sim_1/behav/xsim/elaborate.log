@@ -6,10 +6,8 @@ Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.synchronizer(width=2)
 Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
 Compiling module xil_defaultlib.debouncer_testbench
 Compiling module xil_defaultlib.glbl
