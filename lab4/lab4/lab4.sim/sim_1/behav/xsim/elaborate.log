@@ -1,7 +1,17 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot edge_detector_testbench_behav xil_defaultlib.edge_detector_testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_fpga_test_behav xil_defaultlib.debouncer_fpga_test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=4)
+Compiling module xil_defaultlib.debouncer(width=4,sample_count_m...
+Compiling module xil_defaultlib.edge_detector(width=4)
+Compiling module xil_defaultlib.button_parser(width=4,sample_cou...
+Compiling module xil_defaultlib.debouncer_fpga_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_fpga_test_behav

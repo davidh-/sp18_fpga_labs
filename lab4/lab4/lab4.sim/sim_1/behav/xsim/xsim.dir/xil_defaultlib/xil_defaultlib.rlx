@@ -1,12 +1,14 @@
 0.6
 2017.4
-Jan 30 2018
-15:48:17
+Dec 15 2017
+21:07:18
 C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v,1519354939,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/util.vh,debouncer,,,../../../../lab4.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/button_parser.v,1519295085,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v,,button_parser,,,../../../../lab4.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v,1519355052,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/edge_detector.v,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/util.vh,debouncer,,,../../../../lab4.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_fpga_test.v,1519295085,verilog,,,,debouncer_fpga_test,,,../../../../lab4.srcs/sources_1/new,,,,,
 C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v,1519295085,verilog,,,,debouncer_testbench,,,../../../../lab4.srcs/sources_1/new,,,,,
-C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/edge_detector.v,1519357460,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/edge_detector_testbench.v,,edge_detector,,,../../../../lab4.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/edge_detector.v,1519357460,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v,,edge_detector,,,../../../../lab4.srcs/sources_1/new,,,,,
 C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/edge_detector_testbench.v,1519295085,verilog,,,,edge_detector_testbench,,,../../../../lab4.srcs/sources_1/new,,,,,
 C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v,1519295085,verilog,,,,sync_testbench,,,../../../../lab4.srcs/sources_1/new,,,,,
-C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v,1519298459,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v,,synchronizer,,,../../../../lab4.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v,1519298459,verilog,,C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_fpga_test.v,,synchronizer,,,../../../../lab4.srcs/sources_1/new,,,,,
 C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/util.vh,1519295085,verilog,,,,,,,,,,,,

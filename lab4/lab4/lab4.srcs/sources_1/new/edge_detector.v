@@ -14,7 +14,8 @@ module edge_detector #(
         last_signal = 0;
     end
     
-    reg last_signal;
+    reg [width-1:0] last_signal;
+
     always @ (posedge clk)
         last_signal <= signal_in;
     assign edge_detect_pulse = last_signal & ~signal_in;

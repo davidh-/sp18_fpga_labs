@@ -9,8 +9,8 @@
     <Object name="xc7z020_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/z1top.bit"/>
-      <Properties Property="SLR.COUNT" value="/home/arya/1"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/debouncer_fpga_test.bit"/>
+      <Properties Property="SLR.COUNT" value="C:/Users/David Hooper/AppData/Roaming/Xilinx/Vivado/1"/>
     </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 23 22:37:11 2018
+# Process ID: 8692
+# Current directory: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1
+# Command line: vivado.exe -log debouncer_fpga_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source debouncer_fpga_test.tcl -notrace
+# Log file: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1/debouncer_fpga_test.vdi
+# Journal file: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source debouncer_fpga_test.tcl -notrace

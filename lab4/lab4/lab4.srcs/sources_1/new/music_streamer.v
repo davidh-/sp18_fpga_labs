@@ -21,7 +21,7 @@ module music_streamer (
     rom music_data (
         .address(tone_index),       // 10 bits
         .data(tone),                // 24 bits
-        .last_address()
+        .last_address(last_address_wire)
     );
 
     initial begin
@@ -30,7 +30,22 @@ module music_streamer (
     end
 
     // YOUR CODE FROM LAB3 HERE - you may have to modify this template to integrate your old code.
-
+    
+    initial begin
+        tone_index = 0;
+        clock_counter = 0;
+    end
+    
+    assign rom_address = tone_index;
+    
+    always @(posedge clk) begin
+        clock_counter <= clock_counter + 1;
+        if (clock_counter >= 5000000) begin
+            tone_index <= (tone_index < last_address_wire) ? tone_index + 1  : 0 ;
+            clock_counter <= 0;
+        end
+    end
+    
     // Remove these assignments after creating the FSM
     assign led_paused = 1'b1;
     assign led_regular_play = 1'b0;
