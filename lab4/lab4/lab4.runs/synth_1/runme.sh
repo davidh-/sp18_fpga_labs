@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log debouncer_fpga_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debouncer_fpga_test.tcl
+EAStep vivado -log z1top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top.tcl

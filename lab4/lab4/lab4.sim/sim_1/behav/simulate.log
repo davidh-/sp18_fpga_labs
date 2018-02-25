@@ -1,6 +1,0 @@
-Vivado Simulator 2016.4
-Time resolution is 1 ps
-
-
-Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
-$finish called at time : 165 ns : File "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" Line 55

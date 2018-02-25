@@ -1,3 +1,7 @@
+`include "util.vh"
+`define clk_cycles_p_sec 5_000_000
+`define tempo_change 1_000_000
+
 module music_streamer (
     input clk,
     input rst,
@@ -8,7 +12,7 @@ module music_streamer (
     input switch_fn,            // Switches between regular play and play sequence
     input switch_mode,          // Switches between forward and reverse or play and edit sequence
     input edit_next_node,       // Select next tone to edit
-    input edit_prev_node,       // Selects previous tone to edi
+    input edit_prev_node,       // Selects previous tone to edit
     output led_paused,
     output led_regular_play,
     output led_reverse_play,
@@ -18,29 +22,41 @@ module music_streamer (
 );
     reg [9:0] tone_index;
     reg [22:0] clock_counter;
+    reg [`log2(`clk_cycles_p_sec):0] tempo; //clock cycles per note 125MHz * (1/25 s)
+    wire [9:0] last_address_wire;
+    
+   
     rom music_data (
         .address(tone_index),       // 10 bits
         .data(tone),                // 24 bits
         .last_address(last_address_wire)
     );
-
-    initial begin
-      tone_index = 0;
-      clock_counter = 0;
-    end
-
-    // YOUR CODE FROM LAB3 HERE - you may have to modify this template to integrate your old code.
-    
-    initial begin
-        tone_index = 0;
-        clock_counter = 0;
-    end
-    
-    assign rom_address = tone_index;
     
     always @(posedge clk) begin
-        clock_counter <= clock_counter + 1;
-        if (clock_counter >= 5000000) begin
+        if (tempo_reset) begin
+            tempo <= `clk_cycles_p_sec;
+        end
+        else if (tempo_up) begin
+            tempo <= tempo - `tempo_change;
+        end
+        else if (tempo_down && tempo > 0) begin
+            tempo <= tempo + `tempo_change;
+        end
+    end
+    
+    
+    
+    
+    // YOUR CODE FROM LAB3 HERE - you may have to modify this template to integrate your old code. 
+    always @(posedge clk) begin
+        if (rst) begin
+            clock_counter <= 23'd0;
+            tone_index <= 10'd0;
+        end
+        else begin
+            clock_counter <= clock_counter + 24'd1;
+        end
+        if (clock_counter >= tempo) begin
             tone_index <= (tone_index < last_address_wire) ? tone_index + 1  : 0 ;
             clock_counter <= 0;
         end

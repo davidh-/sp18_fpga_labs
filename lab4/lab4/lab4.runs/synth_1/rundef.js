@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log debouncer_fpga_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debouncer_fpga_test.tcl" );
+         "-log z1top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top.tcl" );
 
 
 

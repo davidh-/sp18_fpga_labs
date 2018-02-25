@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Feb 23 22:36:26 2018
-# Process ID: 5632
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sun Feb 25 11:03:20 2018
+# Process ID: 11392
 # Current directory: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/synth_1
-# Command line: vivado.exe -log debouncer_fpga_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source debouncer_fpga_test.tcl
-# Log file: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/synth_1/debouncer_fpga_test.vds
+# Command line: vivado.exe -log z1top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top.tcl
+# Log file: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/synth_1/z1top.vds
 # Journal file: C:/fpga_labs_sp18/lab4/lab4/lab4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source debouncer_fpga_test.tcl -notrace
+source z1top.tcl -notrace

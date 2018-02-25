@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log debouncer_fpga_test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source debouncer_fpga_test.tcl -notrace
+EAStep vivado -log z1top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source z1top.tcl -notrace
 
 
