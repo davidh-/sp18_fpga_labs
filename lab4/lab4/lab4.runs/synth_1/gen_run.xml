@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1519585398">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1519619391">
   <File Type="PA-TCL" Name="z1top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="z1top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="z1top_reports.tcl"/>
@@ -212,7 +212,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

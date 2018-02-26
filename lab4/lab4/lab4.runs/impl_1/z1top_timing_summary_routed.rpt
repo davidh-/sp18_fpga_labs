@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date         : Sun Feb 25 11:05:10 2018
+| Date         : Sun Feb 25 20:31:37 2018
 | Host         : DESKTOP-DAEE3VS running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file z1top_timing_summary_routed.rpt -rpx z1top_timing_summary_routed.rpx -warn_on_violation
 | Design       : z1top
@@ -52,7 +52,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 139 register/latch pins with no clock driven by root clock pin: CLK_125MHZ_FPGA (HIGH)
+ There are 163 register/latch pins with no clock driven by root clock pin: CLK_125MHZ_FPGA (HIGH)
 
 
 2. checking constant_clock
@@ -67,21 +67,21 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 333 pins that are not constrained for maximum delay. (HIGH)
+ There are 389 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 4 input ports with no input delay specified. (HIGH)
+ There are 6 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There is 1 port with no output delay specified. (HIGH)
+ There are 4 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

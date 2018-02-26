@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date             : Sun Feb 25 11:05:10 2018
+| Date             : Sun Feb 25 20:31:37 2018
 | Host             : DESKTOP-DAEE3VS running 64-bit major release  (build 9200)
 | Command          : report_power -file z1top_power_routed.rpt -pb z1top_power_summary_routed.pb -rpx z1top_power_routed.rpx
 | Design           : z1top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.876        |
+| Total On-Chip Power (W)  | 4.178        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.758        |
-| Device Static (W)        | 0.119        |
+| Dynamic (W)              | 3.932        |
+| Device Static (W)        | 0.247        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 89.9         |
-| Junction Temperature (C) | 35.1         |
+| Max Ambient (C)          | 51.8         |
+| Junction Temperature (C) | 73.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.408 |      355 |       --- |             --- |
-|   LUT as Logic |     0.293 |      143 |     53200 |            0.27 |
+| Slice Logic    |     0.475 |      420 |       --- |             --- |
+|   LUT as Logic |     0.361 |      179 |     53200 |            0.34 |
 |   CARRY4       |     0.073 |       27 |     13300 |            0.20 |
-|   Register     |     0.036 |      138 |    106400 |            0.13 |
+|   Register     |     0.036 |      162 |    106400 |            0.15 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.324 |      248 |       --- |             --- |
-| Block RAM      |     0.011 |      0.5 |       140 |            0.36 |
-| I/O            |     0.015 |       12 |       125 |            9.60 |
-| Static Power   |     0.119 |          |           |                 |
-| Total          |     0.876 |          |           |                 |
+| Signals        |     0.376 |      291 |       --- |             --- |
+| Block RAM      |     0.006 |      0.5 |       140 |            0.36 |
+| I/O            |     3.075 |       14 |       125 |           11.20 |
+| Static Power   |     0.247 |          |           |                 |
+| Total          |     4.178 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,20 +72,20 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.756 |       0.746 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.012 |
-| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vccint    |       1.000 |     0.908 |       0.860 |      0.048 |
+| Vccaux    |       1.800 |     0.142 |       0.113 |      0.029 |
+| Vcco33    |       3.300 |     0.870 |       0.869 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
+| Vccbram   |       1.000 |     0.004 |       0.000 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.022 |       0.000 |      0.022 |
+| Vccpint   |       1.000 |     0.080 |       0.000 |      0.080 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -146,13 +146,13 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| z1top                    |     0.758 |
-|   audio_controller       |     0.156 |
-|   b_parser               |     0.238 |
-|     button_debouncer     |     0.238 |
+| z1top                    |     3.932 |
+|   audio_controller       |     0.125 |
+|   b_parser               |     0.213 |
+|     button_debouncer     |     0.213 |
 |     button_edge_detector |    <0.001 |
 |     button_synchronizer  |     0.000 |
-|   streamer               |     0.326 |
+|   streamer               |     0.493 |
 +--------------------------+-----------+
 
 

@@ -24,11 +24,16 @@ module music_streamer (
     reg [22:0] clock_counter;
     reg [`log2(`clk_cycles_p_sec):0] tempo; //clock cycles per note 125MHz * (1/25 s)
     wire [9:0] last_address_wire;
+    wire [23:0] data_wire;
+    reg in_pause;
+	reg reversed;   
+	reg [23:0] data_to_tone;
+	
+    assign tone = data_to_tone;
     
-   
     rom music_data (
         .address(tone_index),       // 10 bits
-        .data(tone),                // 24 bits
+        .data(data_wire),                // 24 bits
         .last_address(last_address_wire)
     );
     
@@ -36,17 +41,14 @@ module music_streamer (
         if (tempo_reset) begin
             tempo <= `clk_cycles_p_sec;
         end
-        else if (tempo_up) begin
+        else if (tempo_up && tempo > 0) begin
             tempo <= tempo - `tempo_change;
         end
-        else if (tempo_down && tempo > 0) begin
+        else if (tempo_down) begin
             tempo <= tempo + `tempo_change;
         end
     end
-    
-    
-    
-    
+
     // YOUR CODE FROM LAB3 HERE - you may have to modify this template to integrate your old code. 
     always @(posedge clk) begin
         if (rst) begin
@@ -57,18 +59,16 @@ module music_streamer (
             clock_counter <= clock_counter + 24'd1;
         end
         if (clock_counter >= tempo) begin
-            tone_index <= (tone_index < last_address_wire) ? tone_index + 1  : 0 ;
+        	if (reversed)
+        		tone_index <= (tone_index > 0) ? tone_index - 1  : last_address_wire ;
+        	else if (in_pause) 
+        		tone_index <= tone_index;
+        	else
+            	tone_index <= (tone_index < last_address_wire) ? tone_index + 1  : 0 ;
             clock_counter <= 0;
         end
     end
-    
-    // Remove these assignments after creating the FSM
-    assign led_paused = 1'b1;
-    assign led_regular_play = 1'b0;
-    assign led_reverse_play = 1'b0;
-    assign led_play_seq = 1'b0;
-    assign led_edit_seq = 1'b0;
-
+  
     // Use these nets for constructing your FSM
     localparam PAUSED = 3'd0;
     localparam REGULAR_PLAY = 3'd1;
@@ -77,8 +77,72 @@ module music_streamer (
     localparam EDIT_SEQ = 3'd4;
     reg [2:0] current_state;
     reg [2:0] next_state;
+    
+    assign led_paused = current_state == PAUSED;
+    assign led_regular_play = current_state == REGULAR_PLAY;
+    assign led_reverse_play = current_state == REVERSE_PLAY;
+    assign led_play_seq = 1'b0;
+    assign led_edit_seq = 1'b0;
+    
+    // always block for state register
+    always @(posedge clk) begin
+        if (rst) begin
+            current_state <= REGULAR_PLAY;
+        end
+        else begin
+        	current_state <= next_state;
+        end
+    end
 
-    // The following RTL is provided as starter code for Section 8: Music Sequencer
+    // always block for combinational logic portion
+    always @(current_state or play_pause or switch_mode or data_wire) begin
+    	case (current_state)
+	    	REGULAR_PLAY:begin 
+	    	    data_to_tone = data_wire;
+	    		in_pause = 0;
+	    		reversed = 0;
+	    		if (play_pause) begin
+	    			next_state = PAUSED;
+	    		end
+	    		else if (switch_mode) begin
+	    			next_state = REVERSE_PLAY;
+	    		end
+	    		else
+	    			next_state = REGULAR_PLAY;
+	    	end
+	    	PAUSED:begin 
+	    		data_to_tone = 24'b0;
+	    		in_pause = 1;
+	    		reversed = 0;
+	    		if (play_pause) begin
+	    			next_state = REGULAR_PLAY;
+	    		end
+	    		else
+	    			next_state = PAUSED;
+	    	end
+	    	REVERSE_PLAY:begin 
+	    		data_to_tone = data_wire;
+	    		in_pause = 0;
+	    		reversed = 1;
+	    		if (play_pause) begin
+	    			next_state = PAUSED;
+	    		end
+	    		else if (switch_mode) begin
+	    			next_state = REGULAR_PLAY;
+	    		end
+	    		else
+	    			next_state = REVERSE_PLAY;
+	    	end
+	    	default:begin
+	    		data_to_tone = data_wire;
+	    		in_pause = 0;
+	    		reversed = 0;
+	    		next_state = REGULAR_PLAY;
+	    	end
+    	endcase 
+    end
+
+    // The following RTL is provided as starter code for Section 9: Music Sequencer
     reg [23:0] sequencer_mem [7:0];
     reg [2:0] sequencer_addr;
     reg [23:0] tone_under_edit;
