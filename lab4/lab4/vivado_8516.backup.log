@@ -1,0 +1,1739 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Thu Feb 22 02:26:19 2018
+# Process ID: 8516
+# Current directory: C:/fpga_labs_sp18/lab4/lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10920 C:\fpga_labs_sp18\lab4\lab4\lab4.xpr
+# Log file: C:/fpga_labs_sp18/lab4/lab4/vivado.log
+# Journal file: C:/fpga_labs_sp18/lab4/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/fpga_labs_sp18/lab4/lab4/lab4.xpr
+INFO: [Project 1-313] Project file moved from '/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab4/lab4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'lab4.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+set_property top debouncer_testbench [current_fileset]
+update_compile_order -fileset sources_1
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net sync_out is not permitted [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+
+****** Webtalk v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/xsim.dir/debouncer_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/xsim.dir/debouncer_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Feb 22 02:28:55 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 22 02:28:55 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure 0: The debounced output[0] wasn't 0 for the entire test.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 866.438 ; gain = 13.172
+run all
+Failure 1: The debounced output[1] should have gone high by now
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 874.027 ; gain = 1.066
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 880.371 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+add_wave {{/debouncer_testbench/DUT}} 
+add_wave {{/debouncer_testbench/DUT/synch}} 
+save_wave_config {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+set_property xsim.view C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 891.348 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 894.113 ; gain = 2.766
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 894.656 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 898.086 ; gain = 0.301
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: debouncer_testbench
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.289 ; gain = 110.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'debouncer_testbench' [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v:13]
+WARNING: [Synth 8-85] always block has no event control specified [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v:16]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v:3]
+	Parameter width bound to: 2 - type: integer 
+	Parameter sample_count_max bound to: 10 - type: integer 
+	Parameter pulse_count_max bound to: 5 - type: integer 
+	Parameter wrapping_counter_width bound to: 4 - type: integer 
+	Parameter saturating_counter_width bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v:1]
+	Parameter width bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s1_reg was removed.  [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v:22]
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (1#1) [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v:1]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v:3]
+INFO: [Synth 8-256] done synthesizing module 'debouncer_testbench' (3#1) [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1050.531 ; gain = 148.977
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1050.531 ; gain = 148.977
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[0]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[1]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[0]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[1]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[2]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_PWM'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1419.938 ; gain = 518.383
+10 Infos, 16 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1419.938 ; gain = 518.383
+set_property top sync_testbench [current_fileset]
+update_compile_order -fileset sources_1
+set_property top sync_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sync_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sync_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sync_testbench_behav xil_defaultlib.sync_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.sync_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sync_testbench_behav
+
+****** Webtalk v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/xsim.dir/sync_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim/xsim.dir/sync_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Feb 22 03:01:58 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 22 03:01:58 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sync_testbench_behav -key {Behavioral:sim_1:Functional:sync_testbench} -tclbatch {sync_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test1_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_rise was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_fall was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_pulse_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sync_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/pulse_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/async_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/sync_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s1 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s2 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/width was not found in the design.
+source sync_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+
+Check 1 failed
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 165 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" Line 55
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1422.152 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sync_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sync_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sync_testbench_behav xil_defaultlib.sync_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.sync_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sync_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sync_testbench_behav -key {Behavioral:sim_1:Functional:sync_testbench} -tclbatch {sync_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test1_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_rise was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_fall was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_pulse_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sync_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/pulse_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/async_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/sync_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s1 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s2 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/width was not found in the design.
+source sync_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 165 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" Line 55
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1427.625 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1437.098 ; gain = 0.000
+set_property top debouncer_testbench [current_fileset]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+current_sim simulation_9
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1437.098 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.098 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.098 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.098 ; gain = 0.000
+run all
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+set_property top sync_testbench [current_fileset]
+update_compile_order -fileset sources_1
+set_property top sync_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+current_sim simulation_11
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sync_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sync_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sync_testbench_behav xil_defaultlib.sync_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.sync_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sync_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sync_testbench_behav -key {Behavioral:sim_1:Functional:sync_testbench} -tclbatch {sync_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test1_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_rise was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_fall was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_pulse_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sync_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/pulse_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/async_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/sync_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s1 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s2 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/width was not found in the design.
+source sync_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+
+Check 1 failed
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 165 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" Line 55
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1437.098 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sync_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sync_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sync_testbench_behav xil_defaultlib.sync_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.sync_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sync_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sync_testbench_behav -key {Behavioral:sim_1:Functional:sync_testbench} -tclbatch {sync_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test1_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_rise was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_fall was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_pulse_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sync_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/pulse_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/async_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/sync_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s1 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s2 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/width was not found in the design.
+source sync_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+
+Check 1 failed
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 165 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" Line 55
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.098 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sync_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sync_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sync_testbench_behav xil_defaultlib.sync_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.sync_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sync_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sync_testbench_behav -key {Behavioral:sim_1:Functional:sync_testbench} -tclbatch {sync_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test1_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_rise was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_output_should_fall was not found in the design.
+WARNING: Simulation object /debouncer_testbench/test2_done was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/glitchy_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_pulse_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sync_out was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/sample_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/pulse_count_max was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/wrapping_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/saturating_counter_width was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/async_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/clk was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/sync_signal was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s1 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/s2 was not found in the design.
+WARNING: Simulation object /debouncer_testbench/DUT/synch/width was not found in the design.
+source sync_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 165 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/sync_testbench.v" Line 55
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.098 ; gain = 0.000
+set_property top debouncer_testbench [current_fileset]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+current_sim simulation_15
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1437.098 ; gain = 0.000
+run all
+Failure 1: The debounced output[1] should have gone high by now
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Failure 2: The debounced output[1] should stay high once the counter saturates
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4812200445c84191891e858eb9bd13a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_testbench_behav xil_defaultlib.debouncer_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v" Line 3. Module debouncer(width=2,sample_count_max=10,pulse_count_max=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v" Line 1. Module synchronizer(width=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(width=2)
+Compiling module xil_defaultlib.debouncer(width=2,sample_count_m...
+Compiling module xil_defaultlib.debouncer_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/fpga_labs_sp18/lab4/lab4/lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_testbench_behav -key {Behavioral:sim_1:Functional:debouncer_testbench} -tclbatch {debouncer_testbench.tcl} -view {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+WARNING: Simulation object /debouncer_testbench/DUT/debounced_sig_reg was not found in the design.
+source debouncer_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.098 ; gain = 0.000
+run all
+Failure 3: The debounced output[1] should have fallen as soon as the glitchy signal fell
+Failure 4: The debounced output[1] should remain low after the glitchy signal falls
+Test Done! If any failures were printed, fix them! Otherwise this testbench passed.
+$finish called at time : 3725 ns : File "C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v" Line 118
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.797 ; gain = 0.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'debouncer_testbench' [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v:13]
+WARNING: [Synth 8-85] always block has no event control specified [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v:16]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v:3]
+	Parameter width bound to: 2 - type: integer 
+	Parameter sample_count_max bound to: 10 - type: integer 
+	Parameter pulse_count_max bound to: 5 - type: integer 
+	Parameter wrapping_counter_width bound to: 4 - type: integer 
+	Parameter saturating_counter_width bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v:1]
+	Parameter width bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (1#1) [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/synchronizer.v:1]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer.v:3]
+INFO: [Synth 8-256] done synthesizing module 'debouncer_testbench' (3#1) [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/sources_1/new/debouncer_testbench.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1476.395 ; gain = 39.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1476.395 ; gain = 39.297
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[0]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[1]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[0]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[1]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BUTTONS[2]'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUDIO_PWM'. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/fpga_labs_sp18/lab4/lab4/lab4.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1557.926 ; gain = 120.828
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 22 03:31:34 2018...

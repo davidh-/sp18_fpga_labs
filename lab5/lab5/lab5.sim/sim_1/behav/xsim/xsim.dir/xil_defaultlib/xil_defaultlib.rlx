@@ -1,0 +1,16 @@
+0.6
+2017.4
+Jan 30 2018
+15:48:17
+C:/fpga_labs_sp18/lab5/lab5/lab5.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/button_parser.v,1519295085,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/debouncer.v,,button_parser,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/debouncer.v,1519949062,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/edge_detector.v,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/util.vh,debouncer,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/echo_testbench.v,1519946706,verilog,,,,echo_testbench,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/edge_detector.v,1519949024,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/synchronizer.v,,edge_detector,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/synchronizer.v,1519949002,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart.v,,synchronizer,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart.v,1519295085,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_receiver.v,,uart,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_receiver.v,1519295085,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_transmitter.v,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/util.vh,uart_receiver,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v,1520031474,verilog,,,,uart_testbench,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_transmitter.v,1520031052,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/z1top.v,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/util.vh,uart_transmitter,,,../../../../lab5.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/util.vh,1519295085,verilog,,,,,,,,,,,,
+C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/z1top.v,1519946706,verilog,,C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/echo_testbench.v,,z1top,,,../../../../lab5.srcs/sources_1/new,,,,,

@@ -1,0 +1,6 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Test Successful
+$finish called at time : 174228 ns : File "C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v" Line 168
+Test Successful
+$finish called at time : 174228 ns : File "C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v" Line 168

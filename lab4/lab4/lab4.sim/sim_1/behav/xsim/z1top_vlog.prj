@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab4.srcs/sources_1/new" \
+"../../../../lab4.srcs/sources_1/new/button_parser.v" \
+"../../../../lab4.srcs/sources_1/new/debouncer.v" \
+"../../../../lab4.srcs/sources_1/new/edge_detector.v" \
+"../../../../lab4.srcs/sources_1/new/music_streamer.v" \
+"../../../../lab4.srcs/sources_1/new/rom.v" \
+"../../../../lab4.srcs/sources_1/new/synchronizer.v" \
+"../../../../lab4.srcs/sources_1/new/tone_generator.v" \
+"../../../../lab4.srcs/sources_1/new/z1top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

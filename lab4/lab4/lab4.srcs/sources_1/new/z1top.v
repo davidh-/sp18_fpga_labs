@@ -17,17 +17,22 @@ module z1top (
 
     wire reset;
     wire [2:0] clean_buttons;   // Cleaned input from the push buttons.
+    wire [1:0] clean_switches; 
 
     // The button_parser is a wrapper for the synchronizer -> debouncer -> edge detector signal chain
     button_parser #(
-        .width(4),
+        .width(6),
         .sample_count_max(B_SAMPLE_COUNT_MAX),
         .pulse_count_max(B_PULSE_COUNT_MAX)
     ) b_parser (
         .clk(CLK_125MHZ_FPGA),
-        .in({RESET, BUTTONS}),
-        .out({reset, clean_buttons})
+        .in({RESET, BUTTONS, SWITCHES}),
+        .out({reset, clean_buttons, clean_switches})
     );
+
+
+
+
 
     // Connection between music_streamer and tone_generator
     wire [23:0] tone_to_play;
@@ -48,8 +53,8 @@ module z1top (
         .tempo_up(clean_buttons[0]),
         .tempo_down(clean_buttons[1]),
         .tempo_reset(clean_buttons[2]),
-        .play_pause(1'b0),
-        .switch_mode(1'b0),
+        .play_pause(clean_switches[0]),
+        .switch_mode(clean_switches[1]),
         .switch_fn(1'b0),
         .edit_next_node(1'b0),
         .edit_prev_node(1'b0),

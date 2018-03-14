@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Thu Feb 22 02:26:19 2018
+# Process ID: 8516
+# Current directory: C:/fpga_labs_sp18/lab4/lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10920 C:\fpga_labs_sp18\lab4\lab4\lab4.xpr
+# Log file: C:/fpga_labs_sp18/lab4/lab4/vivado.log
+# Journal file: C:/fpga_labs_sp18/lab4/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/fpga_labs_sp18/lab4/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_simulation
+launch_simulation
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+source debouncer_testbench.tcl
+run all
+add_wave {{/debouncer_testbench/DUT}} 
+add_wave {{/debouncer_testbench/DUT/synch}} 
+save_wave_config {C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+set_property xsim.view C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sync_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sync_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source sync_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source sync_testbench.tcl
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+current_sim simulation_9
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sync_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sync_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+current_sim simulation_11
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source sync_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source sync_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source sync_testbench.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top debouncer_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+current_sim simulation_15
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs_sp18/lab4/lab4/debouncer_testbench_behav.wcfg
+source debouncer_testbench.tcl
+run all
+refresh_design
+close_sim
+close_sim

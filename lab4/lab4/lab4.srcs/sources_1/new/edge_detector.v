@@ -10,5 +10,13 @@ module edge_detector #(
     // this module will look for a low to high (0->1) logic transition, and should then output a 1 clock cycle wide pulse
     // for that signal.
     // Remove this line once you have implemented this module.
-    assign edge_detect_pulse = 0;
+    initial begin
+        last_signal = 0;
+    end
+    
+    reg [width-1:0] last_signal;
+
+    always @ (posedge clk)
+        last_signal <= signal_in;
+    assign edge_detect_pulse = last_signal & ~signal_in;
 endmodule

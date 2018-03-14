@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="eecs151-aaq" Host="c125m-25.EECS.Berkeley.EDU" Pid="12105">
+    <Process Command="vivado.bat" Owner="David Hooper" Host="DESKTOP-DAEE3VS" Pid="11728">
     </Process>
 </ProcessHandle>

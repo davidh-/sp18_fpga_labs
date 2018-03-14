@@ -1,0 +1,74 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
+| Date         : Sun Feb 25 20:31:08 2018
+| Host         : DESKTOP-DAEE3VS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file z1top_control_sets_placed.rpt
+| Design       : z1top
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |           16 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           17 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              76 |           26 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+---------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal        |                Enable Signal                |                              Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++----------------------------+---------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_debouncer/p_10_out          | b_parser/button_synchronizer/sat_count[2].saturating_counter_reg[2][7][0] |                3 |              8 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_debouncer/p_13_out          | b_parser/button_synchronizer/sat_count[1].saturating_counter_reg[1][7][0] |                3 |              8 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_debouncer/p_7_out           | b_parser/button_synchronizer/sat_count[3].saturating_counter_reg[3][7][0] |                2 |              8 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_debouncer/p_15_out          | b_parser/button_synchronizer/SR[0]                                        |                2 |              8 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_debouncer/p_4_out           | b_parser/button_synchronizer/sat_count[4].saturating_counter_reg[4][7][0] |                2 |              8 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_debouncer/p_1_out           | b_parser/button_synchronizer/sat_count[5].saturating_counter_reg[5][7][0] |                3 |              8 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | streamer/tone_index[9]_i_2_n_0              | streamer/tone_index[9]_i_1_n_0                                            |                6 |             10 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                             | b_parser/button_debouncer/wrapping_counter[0]_i_1_n_0                     |                5 |             17 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG | b_parser/button_edge_detector/tempo_reg[23] | b_parser/button_debouncer/clean_buttons[0]                                |                5 |             18 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                             |                                                                           |               16 |             22 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                             | streamer/clock_counter[0]_i_1_n_0                                         |                6 |             23 |
+|  CLK_125MHZ_FPGA_IBUF_BUFG |                                             | audio_controller/sq_wave_reg1_carry__0_n_0                                |                6 |             24 |
++----------------------------+---------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 8      |                     6 |
+| 10     |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+
