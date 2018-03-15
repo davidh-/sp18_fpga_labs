@@ -1,6 +1,13 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
-Test Successful
-$finish called at time : 174228 ns : File "C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v" Line 168
-Test Successful
-$finish called at time : 174228 ns : File "C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v" Line 168
+off-chip UART about to transmit: 41 to the on-chip UART
+on-chip UART received: xx from the off-chip UART
+on-chip UART about to transmit: xx to the off-chip UART
+off-chip UART received: 61 from on-chip UART
+41 should have been sent and 61 echoed back
+off-chip UART about to transmit: 42 to the on-chip UART
+on-chip UART received: 42 from the off-chip UART
+on-chip UART about to transmit: 62 to the off-chip UART
+off-chip UART received: 62 from on-chip UART
+42 should have been sent and 62 echoed back
+$finish called at time : 349164 ns : File "C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/echo_testbench.v" Line 155

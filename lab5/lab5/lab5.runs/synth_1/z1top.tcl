@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-3
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,10 +30,14 @@ set_property ip_output_repo c:/fpga_labs_sp18/lab5/lab5/lab5.cache/ip [current_p
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/util.vh
 read_verilog -library xil_defaultlib {
+  C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/button_parser.v
+  C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/debouncer.v
+  C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/edge_detector.v
+  C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/synchronizer.v
   C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart.v
   C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_receiver.v
   C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_transmitter.v
-  C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/uart_testbench.v
+  C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/sources_1/new/z1top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -46,10 +51,10 @@ read_xdc C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/constrs_1/imports/constrs_1/PYNQ-
 set_property used_in_implementation false [get_files C:/fpga_labs_sp18/lab5/lab5/lab5.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc]
 
 
-synth_design -top uart_testbench -part xc7z020clg400-3
+synth_design -top z1top -part xc7z020clg400-3
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef uart_testbench.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file uart_testbench_utilization_synth.rpt -pb uart_testbench_utilization_synth.pb"
+write_checkpoint -force -noxdef z1top.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file z1top_utilization_synth.rpt -pb z1top_utilization_synth.pb"
