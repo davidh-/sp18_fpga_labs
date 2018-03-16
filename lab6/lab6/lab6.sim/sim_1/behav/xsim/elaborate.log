@@ -1,0 +1,14 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 48c82dc663074c178b2e2554b21b2c50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot i2s_controller_testbench_behav xil_defaultlib.i2s_controller_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/fpga_labs_sp18/lab6/lab6/lab6.srcs/sources_1/new/i2s_controller.v" Line 3. Module i2s_controller_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.i2s_controller_default
+Compiling module xil_defaultlib.i2s_controller_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot i2s_controller_testbench_behav

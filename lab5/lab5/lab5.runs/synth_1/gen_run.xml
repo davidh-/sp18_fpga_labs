@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1521083648">
   <File Type="PA-TCL" Name="z1top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="z1top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="z1top_reports.tcl"/>
   <File Type="RDS-RDS" Name="z1top.vds"/>
   <File Type="RDS-UTIL" Name="z1top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="z1top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="z1top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="z1top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="z1top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/button_parser.v">
