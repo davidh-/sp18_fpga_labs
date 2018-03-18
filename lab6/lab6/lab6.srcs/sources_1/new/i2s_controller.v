@@ -45,22 +45,23 @@ module i2s_controller #(
     end
     
     // 2: Generate the LRCK, the left-right clock.
-    localparam LRCK_COUNTER_WIDTH = `log2(LRCK_FREQ_HZ);
+    localparam LRCK_COUNTER_WIDTH = `log2(MCLK_TO_LRCK_RATIO);
     
     reg lrck_reg;
     reg [LRCK_COUNTER_WIDTH-1:0] lrcounter;
     assign lrck = lrck_reg;
     
-    initial lrck_reg = 0;
+    wire mclk_posedge;
+    assign mclk_posedge = !mclk_reg && mcounter == MCLK_CYCLES;
     
-    always @(posedge mclk) begin
+    always @(posedge sys_clk) begin
         if (sys_reset) begin
             lrck_reg <= 0;
             lrcounter <= 0;
         end
-        else if (lrcounter < LRCK_FREQ_HZ)
+        else if (lrcounter < MCLK_TO_LRCK_RATIO-1 && mclk_posedge)
             lrcounter <= lrcounter + 1;
-        else begin
+        else if (mclk_posedge)begin
             lrck_reg <= ~lrck_reg;
             lrcounter <= 0;
         end
@@ -69,24 +70,22 @@ module i2s_controller #(
     // 3. Generate the bit clock, or serial clock. It clocks transmitted bits for a 
     // whole sample on each half-cycle of the lr_clock. The frequency of this clock
     // relative to the lr_clock determines how wide our samples can be.
-    localparam bit_depth = 24;
-    localparam SCLK_CYCLES = `divceil(LRCK_FREQ_HZ, bit_depth);
+    localparam bit_depth = 16;
+    localparam SCLK_CYCLES = (MCLK_TO_LRCK_RATIO / bit_depth)/2;
     localparam SCLK_COUNTER_WIDTH = `log2(SCLK_CYCLES);
     
     reg sclk_reg;
     reg [SCLK_COUNTER_WIDTH-1:0] scounter;
     assign sclk = sclk_reg;
     
-    initial sclk_reg = 0;
-    
-    always @(posedge mclk) begin
+    always @(posedge sys_clk) begin
         if (sys_reset) begin
             sclk_reg <= 0;
             scounter <= 0;
         end
-        else if (scounter < MCLK_CYCLES_HALF)
+        else if (scounter < SCLK_CYCLES-1 && mclk_posedge)
             scounter <= scounter + 1;
-        else begin
+        else if (mclk_posedge) begin
             sclk_reg <= ~sclk_reg;
             scounter <= 0;
         end
@@ -94,19 +93,25 @@ module i2s_controller #(
     // 4. Generate a bit counter that will track which bit of each
     // sample to output for each bit clock.
     
+    reg sdin_reg;
     reg [4:0] bit_counter;
-    assign sdin = bit_counter;
+    assign sdin = sdin_reg;
     
     
     always @(negedge sclk) begin
-        if (sys_reset)
+        if (sys_reset) begin
             bit_counter <= 0;
-        else if (bit_counter == 0)
+            sdin_reg <= 0;
+        end
+        else if (bit_counter == 0) begin
             bit_counter <= bit_depth-1;
+            sdin_reg <= ~sdin_reg;
+        end
         else if (bit_counter > 1)
             bit_counter <= bit_counter - 1;
         else
             bit_counter <= 0;
+
     end    
 
 endmodule
