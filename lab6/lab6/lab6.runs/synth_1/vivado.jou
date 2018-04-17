@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Fri Mar 16 03:06:40 2018
+# Process ID: 3296
+# Current directory: C:/fpga_labs_sp18/lab6/lab6/lab6.runs/synth_1
+# Command line: vivado.exe -log i2s_controller_testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2s_controller_testbench.tcl
+# Log file: C:/fpga_labs_sp18/lab6/lab6/lab6.runs/synth_1/i2s_controller_testbench.vds
+# Journal file: C:/fpga_labs_sp18/lab6/lab6/lab6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source i2s_controller_testbench.tcl -notrace

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1521330419">
+  <File Type="PA-TCL" Name="i2s_controller_testbench.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="i2s_controller_testbench_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="i2s_controller_testbench_reports.tcl"/>
+  <File Type="RDS-RDS" Name="i2s_controller_testbench.vds"/>
+  <File Type="RDS-UTIL" Name="i2s_controller_testbench_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="i2s_controller_testbench_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="i2s_controller_testbench.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="i2s_controller_testbench_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="i2s_controller_testbench_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/util.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.srcs/sources_1/new/util.vh"/>
+        <Attr Name="ImportTime" Val="1519851619"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2s_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.srcs/sources_1/new/i2s_controller.v"/>
+        <Attr Name="ImportTime" Val="1519851576"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2s_controller_testbench.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../eecs151-sp18/fpga_labs/staging/lab6/lab6/lab6.srcs/sources_1/new/i2s_controller_testbench.v"/>
+        <Attr Name="ImportTime" Val="1519851645"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="i2s_controller_testbench"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../eecs151-sp18/fpga_labs/staging/lab5/lab5/lab5.srcs/constrs_1/imports/constrs_1/PYNQ-Z1_C.xdc"/>
+        <Attr Name="ImportTime" Val="1519614713"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

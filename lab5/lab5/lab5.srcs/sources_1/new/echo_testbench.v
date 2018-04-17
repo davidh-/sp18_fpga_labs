@@ -111,6 +111,47 @@ module echo_testbench();
         // We are done! Let time elapse.
         repeat (100) @(posedge clk);
         $display("%h should have been sent and %h echoed back", 8'h41, 8'h61);
+        
+        // Pulse the reset signal long enough to be detected by the debouncer in z1top
+        data_in = 8'h42; // Represents the character 'A' in ASCII
+        
+        reset = 1'b1;
+        repeat (10) @(posedge clk);
+        reset = 1'b0;
+
+        // Wait until the off-chip UART transmitter is ready to transmit
+        while (!data_in_ready) @(posedge clk);
+
+        // Once the off-chip UART transmitter is ready, pulse data_in_valid to tell it that
+        // we have valid data that we want it to send over the serial line
+        data_in_valid = 1'b1;
+        @(posedge clk);
+        data_in_valid = 1'b0;
+        $display("off-chip UART about to transmit: %h to the on-chip UART", data_in);
+
+        // Now the off-chip UART transmitter should be sending the data across FPGA_SERIAL_RX
+
+        // Once all the data reaches the on-chip UART, it should set top/on_chip_uart/data_out_valid high
+        while (!top.on_chip_uart.data_out_valid) @(posedge clk);
+        $display("on-chip UART received: %h from the off-chip UART", top.on_chip_uart.data_out);
+
+        // Then the state machine in z1top should pulse top/on_chip_uart/data_out_ready high and send the data
+        // it received back through the on-chip UART transmitter.
+        while (!top.on_chip_uart.data_in_valid) @(posedge clk);
+        $display("on-chip UART about to transmit: %h to the off-chip UART", top.on_chip_uart.data_in);
+
+        // Finally, when the data is echoed back to the off-chip UART, data_out_valid should go high. Now is when
+        // the off chip UART can read the data it received and print it out to the user
+        while (!data_out_valid) @(posedge clk);
+        $display("off-chip UART received: %h from on-chip UART", data_out);
+        data_out_ready = 1'b1;
+        @(posedge clk);
+        data_out_ready = 1'b0;
+
+        // We are done! Let time elapse.
+        repeat (100) @(posedge clk);
+        $display("%h should have been sent and %h echoed back", 8'h42, 8'h62);
+        
         $finish();
     end
 endmodule

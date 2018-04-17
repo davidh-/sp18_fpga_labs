@@ -1,0 +1,8 @@
+0.6
+2017.4
+Jan 30 2018
+15:48:17
+C:/fpga_labs_sp18/lab6/lab6/lab6.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/fpga_labs_sp18/lab6/lab6/lab6.srcs/sources_1/new/i2s_controller.v,1521335479,verilog,,C:/fpga_labs_sp18/lab6/lab6/lab6.srcs/sources_1/new/i2s_controller_testbench.v,C:/fpga_labs_sp18/lab6/lab6/lab6.srcs/sources_1/new/util.vh,i2s_controller,,,../../../../lab6.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab6/lab6/lab6.srcs/sources_1/new/i2s_controller_testbench.v,1519946706,verilog,,,,i2s_controller_testbench,,,../../../../lab6.srcs/sources_1/new,,,,,
+C:/fpga_labs_sp18/lab6/lab6/lab6.srcs/sources_1/new/util.vh,1519946706,verilog,,,,,,,,,,,,

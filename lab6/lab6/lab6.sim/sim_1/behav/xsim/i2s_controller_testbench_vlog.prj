@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab6.srcs/sources_1/new" \
+"../../../../lab6.srcs/sources_1/new/i2s_controller.v" \
+"../../../../lab6.srcs/sources_1/new/i2s_controller_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
