@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fifo_testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1664069940fs"></ZoomStartTime>
+      <ZoomEndTime time="2702069941fs"></ZoomEndTime>
+      <Cursor1Time time="2626000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/fifo_testbench/rd_clk">
+      <obj_property name="ElementShortName">rd_clk</obj_property>
+      <obj_property name="ObjectShortName">rd_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_testbench/wr_clk">
+      <obj_property name="ElementShortName">wr_clk</obj_property>
+      <obj_property name="ObjectShortName">wr_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_testbench/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/din">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_testbench/wr_en">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_testbench/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/dout">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_testbench/rd_en">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_testbench/empty">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/test_values">
+      <obj_property name="ElementShortName">test_values[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_values[7:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/received_values">
+      <obj_property name="ElementShortName">received_values[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">received_values[7:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/DUT/write_pointer">
+      <obj_property name="ElementShortName">write_pointer[2:0]</obj_property>
+      <obj_property name="ObjectShortName">write_pointer[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/DUT/buffer">
+      <obj_property name="ElementShortName">buffer[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer[7:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_testbench/DUT/read_pointer">
+      <obj_property name="ElementShortName">read_pointer[2:0]</obj_property>
+      <obj_property name="ObjectShortName">read_pointer[2:0]</obj_property>
+   </wvobject>
+</wave_config>

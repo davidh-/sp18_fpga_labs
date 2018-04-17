@@ -1,0 +1,9 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+ALL FIFO TESTS PASSED!
+
+This testbench was run with these params:
+
+Testbench for synchronous FIFO (shared read/write clock, using read clock period)
+RD_CLK_PERIOD =          30, WR_CLK_PERIOD =          80, DATA_WIDTH =          32, FIFO_DEPTH =           8
+$finish called at time : 2626 ns : File "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v" Line 266
