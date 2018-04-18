@@ -4,8 +4,8 @@
 `define MS 1000000
 
 // Only 1 of these defines should be uncommented at a time!
-`define SYNC_FIFO_TEST
-//`define ASYNC_FIFO_TEST
+//`define SYNC_FIFO_TEST
+`define ASYNC_FIFO_TEST
 
 // Clock periods for the read and write clocks
 // If performing the synchronous FIFO test, the read clock will be used for both the read/write interfaces

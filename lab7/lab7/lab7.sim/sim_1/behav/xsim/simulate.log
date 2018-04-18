@@ -4,6 +4,6 @@ ALL FIFO TESTS PASSED!
 
 This testbench was run with these params:
 
-Testbench for synchronous FIFO (shared read/write clock, using read clock period)
+Testbench for asynchronous FIFO (separate read/write clock)
 RD_CLK_PERIOD =          30, WR_CLK_PERIOD =          80, DATA_WIDTH =          32, FIFO_DEPTH =           8
-$finish called at time : 2626 ns : File "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v" Line 266
+$finish called at time : 4906 ns : File "/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v" Line 266

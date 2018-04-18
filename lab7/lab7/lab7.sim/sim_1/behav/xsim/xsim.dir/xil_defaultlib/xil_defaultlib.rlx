@@ -3,6 +3,7 @@
 Dec 15 2017
 20:57:24
 /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/async_fifo.v,1524013073,verilog,,/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v,/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/util.vh,async_fifo,,,../../../../lab7.srcs/sources_1/new,,,,,
 /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo.v,1523936249,verilog,,/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v,/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/util.vh,fifo,,,../../../../lab7.srcs/sources_1/new,,,,,
-/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v,1523935337,verilog,,,,fifo_testbench,,,../../../../lab7.srcs/sources_1/new,,,,,
+/home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/fifo_testbench.v,1524012753,verilog,,,,fifo_testbench,,,../../../../lab7.srcs/sources_1/new,,,,,
 /home/cc/eecs151/sp18/class/eecs151-aaq/fpga_labs_sp18/lab7/lab7/lab7.srcs/sources_1/new/util.vh,1521065502,verilog,,,,,,,,,,,,
